@@ -66,7 +66,13 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function conAnillos(planet) {
+    return planet.hasRings;
+}
 
+const result = planets.filter(conAnillos);
+
+console.log(result);
 
 /**
  * TEST
