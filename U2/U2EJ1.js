@@ -31,7 +31,9 @@ for(let i=0; i<10;i++){
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function fibonacci(i) {
+	return i <= 1 ? i : (fibonacci(i-1) + fibonacci(i-2));
+}
 
 
 /**

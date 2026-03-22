@@ -16,7 +16,9 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function rangeOfNumbers(numb) {
+	return numb <= 1 ? numb : numb + rangeOfNumbers(numb-1);
+}
 
 
 /**
