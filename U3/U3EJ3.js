@@ -61,7 +61,13 @@ console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function totalApproved(classroomStudents) {
+  function isApproved(student) {
+    return student.averageGrade >= 5;
+  }
 
+  return classroomStudents.filter(isApproved).length;
+}
 
 
 /**
