@@ -16,7 +16,13 @@ console.log(reverseArray(4,7,21,3)); //This will return [3,21,7,4]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function reverseArray(...numbers) {
+  let newArray = [];
+  for (let i = numbers.length; i < 0; i--) {
+    newArray.push(numbers[i]);
+  }
+  return newArray;
+}
 
 
 /**

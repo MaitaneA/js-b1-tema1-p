@@ -55,7 +55,20 @@ console.log(oldest(classroomStudents[2], classroomStudents[3], classroomStudents
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function oldest(...students) {
+  let oldestAge = 0;
+  let oldestName = '';
+  
+  students.forEach((student) => {
+    const age = 2023 - student.yearOfBirth;
+    if (age > oldestAge) {
+      oldestAge = age;
+      oldestName = student.name;
+    };
+  });
 
+  return oldestName;
+}
 
 
 /**

@@ -32,7 +32,27 @@ console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function evenNumbers(...integers) {
+  let newArray = [...integers];
+  for (let i = 0; i < newArray.length; i++) {
+    newArray[i] = integers[i] % 2;
+  }
+  
+  let evens = [];
+  for (let i = 0; i < newArray.length; i++) {
+    evens[i] = integers[i] - newArray[i];
+  }
 
+  return evens;
+}
+
+/*function evenNumbers(...integers) {
+  function closestEven(number) {
+    return (number - number%2);
+  }
+
+  return integers.map(closestEven);
+}*/
 
 
 /**
