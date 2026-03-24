@@ -70,7 +70,6 @@ function oldest(...students) {
   return oldestName;
 }
 
-
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 

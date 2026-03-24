@@ -54,7 +54,6 @@ function evenNumbers(...integers) {
   return integers.map(closestEven);
 }*/
 
-
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
