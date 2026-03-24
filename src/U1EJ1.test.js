@@ -2,10 +2,10 @@ import '@testing-library/jest-dom';
 import { tests } from '../U1/U1EJ1';
 describe("tests", () => {
   const result = tests();
-  test('comproves that [result] is an Array', () => {
+  test('verifies that [result] is an Array', () => {
       expect(Array.isArray(result)).toBe(true);
     });
-  test('comproves that the elements of [result] are an Array', () => {
+  test('verifies that the elements of [result] are an Array', () => {
     expect(Array.isArray(result[0])).toBe(true);
     expect(Array.isArray(result[1])).toBe(true);
     expect(Array.isArray(result[2])).toBe(true);
@@ -15,7 +15,7 @@ describe("tests", () => {
     expect(Array.isArray(result[6])).toBe(true);
     expect(Array.isArray(result[7])).toBe(true);
   });
-  test('comproves that the elements of [result] has the name of the planet in his first position', () => {
+  test('verifies that the elements of [result] has the name of the planet in his first position', () => {
       expect(result[0][0]).toBe('Mercury');
       expect(result[1][0]).toBe('Venus');
       expect(result[2][0]).toBe('Earth');
@@ -25,7 +25,7 @@ describe("tests", () => {
       expect(result[6][0]).toBe('Uranus');
       expect(result[7][0]).toBe('Neptune');
     });
-  test('comproves that the elements of [result] has the diameter of the planet in his second position', () => {
+  test('verifies that the elements of [result] has the diameter of the planet in his second position', () => {
       expect(result[0][1]).toBe(4878);
       expect(result[1][1]).toBe(12100);
       expect(result[2][1]).toBe(12756);
